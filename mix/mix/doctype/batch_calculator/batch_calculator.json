@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-24 17:39:43.133115",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "formulation",
+  "desired_yield",
+  "scaled_ingredients"
+ ],
+ "fields": [
+  {
+   "fieldname": "formulation",
+   "fieldtype": "Link",
+   "label": "Formulation",
+   "options": "Formulation"
+  },
+  {
+   "fieldname": "desired_yield",
+   "fieldtype": "Float",
+   "label": "Desired Yield"
+  },
+  {
+   "fieldname": "scaled_ingredients",
+   "fieldtype": "Table",
+   "label": "Scaled Ingredients",
+   "options": "Formulation Ingredient"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-24 17:41:04.979355",
+ "modified_by": "dev@kwarami.net",
+ "module": "Mix",
+ "name": "Batch Calculator",
+ "owner": "dev@kwarami.net",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

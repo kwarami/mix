@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-24 17:30:28.571555",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "formulation",
+  "version_number",
+  "change_log",
+  "created_by",
+  "created_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "formulation",
+   "fieldtype": "Link",
+   "label": "Formulation",
+   "options": "Formulation"
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Int",
+   "label": "Version Number"
+  },
+  {
+   "fieldname": "change_log",
+   "fieldtype": "Text",
+   "label": "Change Log"
+  },
+  {
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User"
+  },
+  {
+   "default": "now",
+   "fieldname": "created_on",
+   "fieldtype": "Datetime",
+   "label": "Created On"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-24 17:32:09.677676",
+ "modified_by": "dev@kwarami.net",
+ "module": "Mix",
+ "name": "Formulation Version",
+ "owner": "dev@kwarami.net",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

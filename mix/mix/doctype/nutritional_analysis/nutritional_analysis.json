@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-24 16:23:52.520423",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "formulation",
+  "calories",
+  "macro_nutrients",
+  "micro_nutrients",
+  "calculation_basis"
+ ],
+ "fields": [
+  {
+   "fieldname": "formulation",
+   "fieldtype": "Link",
+   "label": "Formulation",
+   "options": "Formulation"
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "label": "Calories"
+  },
+  {
+   "fieldname": "macro_nutrients",
+   "fieldtype": "Table",
+   "label": "Macro Nutrients",
+   "options": "Nutritional Info"
+  },
+  {
+   "fieldname": "micro_nutrients",
+   "fieldtype": "Table",
+   "label": "Micro Nutrients",
+   "options": "Nutritional Info"
+  },
+  {
+   "fieldname": "calculation_basis",
+   "fieldtype": "Select",
+   "label": "Calculation Basis",
+   "options": "100g\n1kg\nper Serving"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-24 17:48:02.408991",
+ "modified_by": "dev@kwarami.net",
+ "module": "Mix",
+ "name": "Nutritional Analysis",
+ "owner": "dev@kwarami.net",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

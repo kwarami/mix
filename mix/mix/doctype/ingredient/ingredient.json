@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-24 16:57:29.342757",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ingredient_name",
+  "item_code",
+  "origin",
+  "supplier_info",
+  "certifications",
+  "functional_properties",
+  "nutritional_info",
+  "allergens"
+ ],
+ "fields": [
+  {
+   "fieldname": "ingredient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ingredient Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "origin",
+   "fieldtype": "Data",
+   "label": "Origin"
+  },
+  {
+   "fieldname": "supplier_info",
+   "fieldtype": "Small Text",
+   "label": "Supplier Info"
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Table",
+   "label": "Certifications",
+   "options": "Certifications"
+  },
+  {
+   "fieldname": "functional_properties",
+   "fieldtype": "Small Text",
+   "label": "Functional Properties"
+  },
+  {
+   "fieldname": "nutritional_info",
+   "fieldtype": "Table",
+   "label": "Nutritional Info",
+   "options": "Nutritional Info"
+  },
+  {
+   "fieldname": "allergens",
+   "fieldtype": "Table",
+   "label": "Allergens",
+   "options": "Allergen Info"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-24 17:11:30.914122",
+ "modified_by": "dev@kwarami.net",
+ "module": "Mix",
+ "name": "Ingredient",
+ "owner": "dev@kwarami.net",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

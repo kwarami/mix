@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-24 16:07:45.048922",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nfhv",
+  "amended_from",
+  "formulation_name",
+  "product",
+  "version",
+  "status",
+  "base_yield",
+  "unit_of_measure",
+  "total_cost",
+  "nutritional_profile",
+  "approval_status",
+  "formulation_ingredients"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nfhv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Formulation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "formulation_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Formulation Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Item"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Int",
+   "label": "Version"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nApproved\nArchived"
+  },
+  {
+   "fieldname": "base_yield",
+   "fieldtype": "Float",
+   "label": "Base Yield"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Link",
+   "label": "Unit of Measure",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "nutritional_profile",
+   "fieldtype": "Table",
+   "label": "Nutritional Profile",
+   "options": "Nutritional Analysis"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Link",
+   "label": "Approval Status",
+   "options": "Approval Workflow"
+  },
+  {
+   "fieldname": "formulation_ingredients",
+   "fieldtype": "Table",
+   "label": "Formulation Ingredients",
+   "options": "Formulation Ingredient"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-24 17:49:21.044343",
+ "modified_by": "dev@kwarami.net",
+ "module": "Mix",
+ "name": "Formulation",
+ "owner": "dev@kwarami.net",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

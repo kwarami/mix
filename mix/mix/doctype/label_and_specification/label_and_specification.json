@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-24 17:43:32.147274",
+ "custom": 1,
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "formulation",
+  "label_template",
+  "specification_pdf",
+  "generated_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "formulation",
+   "fieldtype": "Link",
+   "label": "Formulation",
+   "options": "Formulation"
+  },
+  {
+   "fieldname": "label_template",
+   "fieldtype": "Attach",
+   "label": "Label Template"
+  },
+  {
+   "fieldname": "specification_pdf",
+   "fieldtype": "Attach",
+   "label": "Specification PDF"
+  },
+  {
+   "default": "now",
+   "fieldname": "generated_on",
+   "fieldtype": "Datetime",
+   "label": "Generated On"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-24 17:44:58.042009",
+ "modified_by": "dev@kwarami.net",
+ "module": "Mix",
+ "name": "Label and Specification",
+ "owner": "dev@kwarami.net",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
