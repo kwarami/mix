@@ -5,6 +5,16 @@ app_description = "Food Formulation for Brands and Food Scientists"
 app_email = "contact@collabnscale.com"
 app_license = "mit"
 
+fixtures = [
+    {
+        "dt": "Workspace",
+        "filters": [
+            ["module", "=", "Mix"]
+        ]
+    }
+]
+
+
 # Apps
 # ------------------
 
